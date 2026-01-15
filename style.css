@@ -8,8 +8,8 @@
 
 
 .inter-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
 }
 
 /* shared styles */
@@ -39,8 +39,8 @@
 /* header styles */
 
 header {
-    width: 80%;
-    max-width: 1600px;
+    width: 75%;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -63,7 +63,8 @@ header {
     font-weight: 600;
 }
 
-.nav-links a, .nav-icons i {
+.nav-links a,
+.nav-icons i {
     text-decoration: none;
     color: #000;
     margin-right: 30px;
@@ -109,6 +110,34 @@ header {
     display: none;
 }
 
+/* sponsors styles */
+
+#sponsors {
+    margin-top: 50px;
+}
+
+.sponsors-container {
+    width: 69%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.sponsors-images {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 60px;
+    place-items: center;
+}
+
+.sponsors-images img {
+    width: 100%;
+}
+
+.sponsors-container hr {
+    border: 1px solid rgba(24, 23, 23, 0.035);
+}
+
 /* responsiveness (576px) */
 
 @media screen and (max-width:576px) {
@@ -150,6 +179,12 @@ header {
         background-size: 100%;
         background-repeat: no-repeat;
     }
+
+    .sponsors-images {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        justify-content: center;
+    }
 }
 
 /* responsive (576px - 992px */
@@ -189,5 +224,11 @@ header {
     .banner-content h2 {
         font-size: 2.25rem;
         line-height: 42px;
+    }
+
+    .sponsors-images {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+        justify-items: center;
     }
 }
