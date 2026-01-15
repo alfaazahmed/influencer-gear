@@ -113,7 +113,7 @@ header {
 /* sponsors styles */
 
 #sponsors {
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .sponsors-container {
@@ -141,7 +141,7 @@ header {
 /* collection style */
 
 #collection {
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .collection-heading {
@@ -214,6 +214,74 @@ header {
     letter-spacing: 1.8%;
 }
 
+.see-more {
+    width: 65%;
+    max-width: 1050px;
+    margin: 0 auto;
+    text-align: end;
+    margin-top: 50px;
+
+}
+
+.see-more a {
+    text-decoration: none;
+    color: #E02C6D;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.see-more button {
+    border: none;
+    background-color: #fff;
+}
+
+/* feature styles */
+
+#feature {
+    margin-top: 50px;
+}
+
+.feature-container {
+    width: 69%;
+    max-width: 1110px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.feature-content {
+    max-width: 610px;
+}
+
+.feature-content h2 {
+    font-size: 2.3rem;
+    line-height: 3.75rem;
+    font-weight: 700;
+    color: #0A0826;
+    margin-bottom: 10px;
+}
+
+.feature-content p {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.75;
+    color: #6C6C6C;
+    margin-bottom: 10px;
+}
+
+.feature-btn {
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border: none;
+}
+
+.feature-btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
 /* responsiveness (576px) */
 
 @media screen and (max-width:576px) {
@@ -237,7 +305,8 @@ header {
         justify-content: space-between;
     }
 
-    .banner-container {
+    .banner-container,
+    .feature-container {
         flex-direction: column-reverse;
     }
 
@@ -265,6 +334,15 @@ header {
     .collection-container {
         grid-template-columns: 1fr;
         justify-content: center;
+    }
+
+    .collection-heading {
+        font-size: 1.5rem;
+    }
+
+    .feature-container {
+        gap: 30px;
+        text-align: center;
     }
 }
 
