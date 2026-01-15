@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* shared styles */
+
+.display-flex {
+    display: flex;
+}
+
+.primary-color {
+    color: #3a3a3a;
+}
+
+.primary-btn {
+    background-color: #E02C6D;
+    padding: 10px 25px;
+    border-radius: 41px;
+    border: none;
+}
+
+.primary-btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* header styles */
+
+header {
+    width: 80%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.header-container {
+    justify-content: space-between;
+    padding: 4rem 0;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.nav-links a, .nav-icons i {
+    text-decoration: none;
+    color: #000;
+    margin-right: 30px;
+}
+
+.banner-container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-content {
+    max-width: 582px;
+}
+
+.banner-image {
+    width: 100%;
+    max-width: 475px;
+    height: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/Circle\ design.svg);
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+.banner-content h2 {
+    font-size: 3.25rem;
+    line-height: 4.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.banner-content p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#r-mobile {
+    display: none;
+}
+
+/* responsiveness (576px) */
+
+@media screen and (max-width:576px) {
+
+    .header-container {
+        padding: 0;
+    }
+
+
+    .logo,
+    .navbar,
+    .nav-icons {
+        display: none;
+    }
+
+    #r-mobile {
+        display: block;
+        display: flex;
+        padding-top: 30px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+
+    .banner-content h2 {
+        font-size: 1.75rem;
+        line-height: 42px;
+    }
+
+    .banner-image {
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+/* responsive (576px - 992px */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    .header-container {
+        padding: 0;
+    }
+
+
+    .logo,
+    .navbar,
+    .nav-icons {
+        display: none;
+    }
+
+    #r-mobile {
+        display: block;
+        display: flex;
+        padding-top: 30px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .banner-content {
+        gap: 50px;
+    }
+
+
+    .banner-image {
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .banner-content h2 {
+        font-size: 2.25rem;
+        line-height: 42px;
+    }
+}
