@@ -282,6 +282,42 @@ header {
     font-weight: 700;
 }
 
+/* footer styles */
+
+footer {
+    background-color: #0A0826;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 314px;
+    margin: 0 auto;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-icons img {
+    width: 24px;
+}
+
+.footer-container h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-container p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-icons {
+    margin-right: 10px;
+}
+
 /* responsiveness (576px) */
 
 @media screen and (max-width:576px) {
@@ -394,5 +430,10 @@ header {
     .collection-container {
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
+    }
+
+    .feature-container {
+        flex-direction: column-reverse;
+        gap: 30px;
     }
 }
