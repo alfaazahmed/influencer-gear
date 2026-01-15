@@ -138,6 +138,82 @@ header {
     border: 1px solid rgba(24, 23, 23, 0.035);
 }
 
+/* collection style */
+
+#collection {
+    margin-top: 100px;
+}
+
+.collection-heading {
+    font-size: 1.75rem;
+    color: #3a3a3a;
+    line-height: 4.3rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.collection-container {
+    width: 65%;
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.collection-card {
+    padding: 20px 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.108)
+}
+
+.collection-card-image {
+    max-width: 336px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.collection-card-content {
+    padding-left: 20px; 
+}
+.collection-card-content h3 {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    color: #18191F;
+    margin-bottom: 6px;
+}
+
+.collection-card-content h4 {
+    font-size: 1.5rem;
+    line-height: 150%;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 6px;
+}
+
+.collection-stars {
+    gap: 0.5rem;
+    margin-bottom: 6px;
+}
+
+.collection-stars-p p {
+    font-size: 0.87rem;
+    line-height: 1.37rem;
+    color: #5E6366;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.collection-card-content p {
+    font-size: 0.87rem;
+    line-height: 143%;
+    font-weight: 700;
+    letter-spacing: 1.8%;
+}
+
 /* responsiveness (576px) */
 
 @media screen and (max-width:576px) {
@@ -185,6 +261,11 @@ header {
         gap: 20px;
         justify-content: center;
     }
+
+    .collection-container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
 }
 
 /* responsive (576px - 992px */
@@ -230,5 +311,10 @@ header {
         grid-template-columns: repeat(4, 1fr);
         gap: 50px;
         justify-items: center;
+    }
+
+    .collection-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
     }
 }
